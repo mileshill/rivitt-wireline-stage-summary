@@ -1,5 +1,5 @@
 # Wireline Analysis
-
+![Wireline Stage Summary](/static/wireline_grafana_stage.png?raw=True "Wireline Stage Summary")
 ## How to run
 Launching is short with just a few steps.
 1. Launch the services
