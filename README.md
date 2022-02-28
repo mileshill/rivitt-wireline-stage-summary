@@ -1,9 +1,64 @@
 # Wireline Analysis
+
 ### Single Stage Summary
 ![Wireline Stage Summary](/static/wireline_grafana_stage.png?raw=True "Stage Summary")
 
 ### Multi Stage Summary
 ![Wireline Stage Summary](/static/wireline_grafana_summary.png?raw=True "Multi Stage Summary")
+
+### How it works?
+![Rivitt Data Flow](/static/dataflow.png "Rivitt Data Flow")
+
+Rivitt captures raw data, aggregates at the IoT edge, applies proprietary analysis to generate each Wireline stage summary. 
+Those summary can be aggregated using Excel, SQL, or any other data store and reporting system currently in use. After all,
+it's just a JSON being delivered. 
+
+With the data in hand, operators can detect performance trends, validate charge estimates and shipping request, and answer
+the important questions. Statistical marketing can be implemented. Knowing gun failure rates, accident probability per 
+hour and stage can be computed and used to highlight the safety and performance of your teams.
+
+```text
+#  Raw measurements consumed from Wireline system
+-0.061,0.37560000000000004,-2.9455999999999998,-12.0946,399.12,1584.7913,1062.5291,18422.7246,-0.1721,Run in Hole,1579984141,,01/25/2020 02:29:01 PM
+-0.09140000000000001,2.9915000000000003,-2.5248,-12.0946,398.75,1585.5417,1061.5334,18428.2832,0.0357,Run in Hole,1579984142,,01/25/2020 02:29:02 PM
+-0.12190000000000001,3.7519,-2.9455999999999998,-12.0946,399.37,1586.7914,1063.5247,18436.709,-0.2194,Run in Hole,1579984143,,01/25/2020 02:29:03 PM
+-0.21330000000000002,3.8127,-2.9455999999999998,-12.0946,404.25,1587.7916,1059.5422,18443.1328,0.2917,Run in Hole,1579984144,,01/25/2020 02:29:04 PM
+-0.09140000000000001,1.866,-2.9455999999999998,-8.0631,399.0,1588.792,1060.5378,18450.0332,0.217,Run in Hole,1579984145,,01/25/2020 02:29:05 PM
+0.030500000000000003,3.9952,-2.9455999999999998,-8.0631,396.87,1589.5313,1062.5291,18454.8086,-0.1779,Run in Hole,1579984146,,01/25/2020 02:29:06 PM
+-0.12190000000000001,2.1398,-2.9455999999999998,-8.0631,399.12,1590.7915,1059.5422,18463.0742,0.0235,Run in Hole,1579984147,,01/25/2020 02:29:07 PM
+-0.061,2.6265,-2.5248,-12.0946,399.5,1591.792,1075.472,18470.0664,0.0058000000000000005,Run in Hole,1579984148,,01/25/2020 02:29:08 PM
+-0.030500000000000003,2.6873,-2.9455999999999998,-12.0946,398.87,1592.5424,1069.4984,18474.791,-0.3119,Run in Hole,1579984149,,01/25/2020 02:29:09 PM
+```
+```json
+// Beautiful summary data engineered from raw source 
+{
+    "id": "cf1de56a-9882-11ec-8787-afba9208244b",  // Unique identifer locally generated
+    "time_start": "2020-01-26 03:53:12", // UTC start detection
+    "time_start_epoch": 1580010792,  // Unix epoch
+    "time_end": "2020-01-26 05:15:30", // UTC end detection 
+    "time_end_epoch": 1580015730, // Unix epoch
+    "duration_total_minutes": 82, // Stage duration
+    "depth_heel": 10451, // Wellbore heel
+    "depth_vertical": 10246, // Surface to heel
+    "depth_lateral": 8379, //  Heel to toe
+    "depth_max": 18830, // Surface to toe
+    "shots_count": 2,  // Detected shots (plug included)
+    "shots": [
+        {
+            "timestamp": "2020-01-26 04:40:31", // UTC
+            "timestamp_epoch": 1580013631, // Unix epoch
+            "depth_shot": 18803, // Depth of shot
+            "type": "plug"  // Plug goes first in Pump Down Plug and Perf
+        },
+        {
+            "timestamp": "2020-01-26 04:41:01",
+            "timestamp_epoch": 1580013661,
+            "depth_shot": 18802,
+            "type": "charge"
+        },
+}
+```
+
 
 ## How to run
 Launching is short with just a few steps.
