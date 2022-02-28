@@ -1,11 +1,36 @@
 # Wireline Analysis
+Get more value from your wireline data! Rivitt collects real-time data from the wireline unit and streams the data
+directly from the edge to your infrastructure. It's not just raw data, the Rivitt engine detects events and computes
+a stage summary. You can monitor and track wireline operations in real-time from the comfort the office. Morning reports
+can be generated detailing the KPIs your team needs to know.
+
 
 ### Single Stage Summary
 ![Wireline Stage Summary](/static/wireline_grafana_stage.png?raw=True "Stage Summary")
 
+Fields 
+- Duration: total minutes from stage start to stage stop
+- Total Depth: max depth measured during stage
+- Depth Vertical: depth from surface to heel
+- Depth Lateral: depth from heel to toe
+- Charge Count: number of charges, including plug, during the stage
+- Plug Depth: depth of plug
+- Line Chart: measured depth, tension, and voltage
+- CCL: measured depth and casing collar locator
+- Charge Depth Table: time and depth of each charge
 ### Multi Stage Summary
 ![Wireline Stage Summary](/static/wireline_grafana_summary.png?raw=True "Multi Stage Summary")
 
+Fields 
+- Duration: sum of all minutes from all stages 
+- Total Depth: sum of all max depths
+- Total Depth Vertical: sum of depth from surface to heel for all stages
+- Total Depth Lateral: sum of depth from heel to toe for all stages
+- Total Charge Count: sum of number of charges, including plug, during all stages
+- Total Plug Depth: depth of plug
+- Line Chart: measured depth, tension, and voltage for all stages
+- CCL: measured depth and casing collar locator for all stages
+- 
 ### How it works?
 ![Rivitt Data Flow](/static/dataflow.png "Rivitt Data Flow")
 
