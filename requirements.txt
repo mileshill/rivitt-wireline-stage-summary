@@ -1,0 +1,11 @@
+certifi==2020.6.20
+mysql-connector-python==8.0.28
+numpy==1.22.2
+pandas==1.4.1
+pip==21.2.4
+protobuf==3.19.4
+python-dateutil==2.8.2
+pytz==2021.3
+setuptools==58.0.4
+six==1.16.0
+wheel==0.37.1
