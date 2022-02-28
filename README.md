@@ -4,6 +4,9 @@ directly from the edge to your infrastructure. It's not just raw data, the Rivit
 a stage summary. You can monitor and track wireline operations in real-time from the comfort the office. Morning reports
 can be generated detailing the KPIs your team needs to know.
 
+The screen shots below were generated using Grafana, a free open-source tool. You can create, change, or delete any
+metrics not useful to your team. Grafana is a simple solution for real-time viewing. 
+
 
 ### Single Stage Summary
 ![Wireline Stage Summary](/static/wireline_grafana_stage.png?raw=True "Stage Summary")
