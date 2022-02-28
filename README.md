@@ -1,5 +1,10 @@
 # Wireline Analysis
-![Wireline Stage Summary](/static/wireline_grafana_stage.png?raw=True "Wireline Stage Summary")
+### Single Stage Summary
+![Wireline Stage Summary](/static/wireline_grafana_stage.png?raw=True "Stage Summary")
+
+### Multi Stage Summary
+![Wireline Stage Summary](/static/wireline_grafana_summary.png?raw=True "Multi Stage Summary")
+
 ## How to run
 Launching is short with just a few steps.
 1. Launch the services
