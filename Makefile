@@ -19,7 +19,6 @@ docker-start-mysql:
 
 
 docker-stop-mysql:
-	echo "Stopping mysql"
 	docker rm -f mysql
 
 docker-start-grafana:
@@ -37,6 +36,8 @@ docker-start-grafana:
 
 docker-stop-grafana:
 	docker rm -f grafana
+
+docker-stop: docker-stop-grafana docker-stop-mysql
 
 load-data-wireline:
 	python ${PWD}/main.py --filepath ${PWD}/data/csv/wireline_records.csv --db-table data
