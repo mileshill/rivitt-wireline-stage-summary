@@ -45,6 +45,21 @@ With the data in hand, operators can detect performance trends, validate charge 
 the important questions. Statistical marketing can be implemented. Knowing gun failure rates, accident probability per 
 hour and stage can be computed and used to highlight the safety and performance of your teams.
 
+#### Raw Data, Events, Summaries
+Raw data are sensor readings. They are real-time samples of the current state of the system.
+
+Events are computed fields that detect key identifiers within the raw data.
+
+Summaries aggregate and summarize data between events.
+
+Using event detection we are able to build high-value stage summaries, similar to frac post job reports PJRs. Using Rivitt summaries,
+you will know how many guns fired yesterday, how many stages you ran per truck and total this week, and how many miles of depth your 
+cables have descending.
+
+
+
+
+
 ```text
 #  Raw measurements consumed from Wireline system
 -0.061,0.37560000000000004,-2.9455999999999998,-12.0946,399.12,1584.7913,1062.5291,18422.7246,-0.1721,1579984141,,01/25/2020 02:29:01 PM
