@@ -8,6 +8,7 @@ The screen shots below were generated using Grafana, a free open-source tool. Yo
 metrics not useful to your team. Grafana is a simple solution for real-time viewing. [Check out the live dashboard](https://miles1618.grafana.net/dashboard/snapshot/Aap5Pyvd0FcW1BNHsJw697tvKoIjYFRL)! 
 
 [Rivitt Website](www.rivitt.com)
+
 [Rivitt LinkedIn](https://www.linkedin.com/company/rivittenergy)
 
 ### Single Stage Summary
