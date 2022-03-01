@@ -5,7 +5,7 @@ a stage summary. You can monitor and track wireline operations in real-time from
 can be generated detailing the KPIs your team needs to know.
 
 The screen shots below were generated using Grafana, a free open-source tool. You can create, change, or delete any
-metrics not useful to your team. Grafana is a simple solution for real-time viewing. 
+metrics not useful to your team. Grafana is a simple solution for real-time viewing. [Check out the live dashboard](https://miles1618.grafana.net/dashboard/snapshot/Aap5Pyvd0FcW1BNHsJw697tvKoIjYFRL)! 
 
 
 ### Single Stage Summary
