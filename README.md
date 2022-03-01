@@ -1,12 +1,14 @@
 # Wireline Analysis
-Get more value from your wireline data! Rivitt collects real-time data from the wireline unit and streams the data
-directly from the edge to your infrastructure. It's not just raw data, the Rivitt engine detects events and computes
+Get more value from your wireline data! [Rivitt](www.rivitt.com) collects real-time data from the wireline unit and streams the data
+directly from the edge to your infrastructure. It's not just raw data, the [Rivitt](www.rivitt.com) engine detects events and computes
 a stage summary. You can monitor and track wireline operations in real-time from the comfort the office. Morning reports
 can be generated detailing the KPIs your team needs to know.
 
 The screen shots below were generated using Grafana, a free open-source tool. You can create, change, or delete any
 metrics not useful to your team. Grafana is a simple solution for real-time viewing. [Check out the live dashboard](https://miles1618.grafana.net/dashboard/snapshot/Aap5Pyvd0FcW1BNHsJw697tvKoIjYFRL)! 
 
+[Rivitt Website](www.rivitt.com)
+[Rivitt LinkedIn](https://www.linkedin.com/company/rivittenergy)
 
 ### Single Stage Summary
 ![Wireline Stage Summary](/static/wireline_grafana_stage.png?raw=True "Stage Summary")
@@ -37,7 +39,7 @@ Fields
 ### How it works?
 ![Rivitt Data Flow](/static/dataflow.png "Rivitt Data Flow")
 
-Rivitt captures raw data, aggregates at the IoT edge, applies proprietary analysis to generate each Wireline stage summary. 
+[Rivitt](www.rivitt.com) captures raw data, aggregates at the IoT edge, applies proprietary analysis to generate each Wireline stage summary. 
 Those summary can be aggregated using Excel, SQL, or any other data store and reporting system currently in use. After all,
 it's just a JSON being delivered. 
 
@@ -52,7 +54,7 @@ Events are computed fields that detect key identifiers within the raw data.
 
 Summaries aggregate and summarize data between events.
 
-Using event detection we are able to build high-value stage summaries, similar to frac post job reports PJRs. Using Rivitt summaries,
+Using event detection we are able to build high-value stage summaries, similar to frac post job reports PJRs. Using [Rivitt](www.rivitt.com) summaries,
 you will know how many guns fired yesterday, how many stages you ran per truck and total this week, and how many miles of depth your 
 cables have descending.
 
